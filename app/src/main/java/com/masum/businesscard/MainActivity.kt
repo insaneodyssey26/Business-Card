@@ -24,3 +24,8 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun  naming () {
+    
+}
