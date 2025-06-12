@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BusinessCardTheme {
                 Surface (modifier = Modifier.fillMaxSize()) {
-                   contacts()
+                   BusinessCardApp()
                 }
             }
         }
@@ -43,11 +43,23 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun BusinessCardApp() {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        profile()
+        contacts()
+    }
+}
+
+@Composable
 fun  profile() {
     Column (
-        modifier = Modifier
-            .fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
+        modifier = Modifier,
+           // .fillMaxSize(),
+     //   verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         val image = painterResource(R.drawable.android_logo)
@@ -68,9 +80,9 @@ fun  profile() {
 fun contacts() {
     Column (
         modifier = Modifier
-            .fillMaxSize()
+              //  .fillMaxSize()
             .padding(bottom = 20.dp),
-        verticalArrangement = Arrangement.Bottom,
+      //  verticalArrangement = Arrangement.Bottom,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Row {
