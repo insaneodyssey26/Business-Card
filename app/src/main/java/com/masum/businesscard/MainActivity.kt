@@ -61,8 +61,6 @@ fun BusinessCardApp() {
 fun  profile() {
     Column (
         modifier = Modifier,
-           // .fillMaxSize(),
-     //   verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         val image = painterResource(R.drawable.android_logo)
@@ -83,9 +81,7 @@ fun  profile() {
 fun contacts() {
     Column (
         modifier = Modifier
-              //  .fillMaxSize()
             .padding(bottom = 20.dp),
-      //  verticalArrangement = Arrangement.Bottom,
         verticalArrangement = Arrangement.spacedBy(7.dp), // Sob row te individually modifier na kore, erokom korle sob row er moddhe space thakbe
         horizontalAlignment = Alignment.CenterHorizontally
     ){
