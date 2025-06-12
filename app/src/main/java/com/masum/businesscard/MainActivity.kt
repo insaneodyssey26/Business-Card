@@ -56,3 +56,13 @@ fun  profile() {
         )
     }
 }
+
+@Composable
+fun contacts() {
+    Column (
+        modifier = Modifier
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.End
+    ){  }
+}
