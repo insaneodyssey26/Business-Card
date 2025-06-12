@@ -7,8 +7,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -18,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.masum.businesscard.ui.theme.BusinessCardTheme
 
@@ -28,7 +33,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BusinessCardTheme {
                 Surface (modifier = Modifier.fillMaxSize()) {
-                   profile()
+                   contacts()
                 }
             }
         }
@@ -62,7 +67,12 @@ fun contacts() {
     Column (
         modifier = Modifier
             .fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.End
-    ){  }
+        verticalArrangement = Arrangement.Bottom,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Row {
+            Icon(Icons.Rounded.Phone, contentDescription = "Phone")
+            Text(text = "+91 98308 81509")
+        }
+    }
 }
