@@ -86,6 +86,7 @@ fun contacts() {
               //  .fillMaxSize()
             .padding(bottom = 20.dp),
       //  verticalArrangement = Arrangement.Bottom,
+        verticalArrangement = Arrangement.spacedBy(7.dp), // Sob row te individually modifier na kore, erokom korle sob row er moddhe space thakbe
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Row {
