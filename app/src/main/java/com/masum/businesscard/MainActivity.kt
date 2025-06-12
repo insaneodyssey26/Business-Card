@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Phone
 import androidx.compose.material.icons.rounded.Share
 import androidx.compose.material3.Icon
@@ -67,7 +68,8 @@ fun  profile() {
 fun contacts() {
     Column (
         modifier = Modifier
-            .fillMaxSize(),
+            .fillMaxSize()
+            .padding(bottom = 20.dp),
         verticalArrangement = Arrangement.Bottom,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
@@ -78,6 +80,10 @@ fun contacts() {
         Row {
             Icon(Icons.Rounded.Share, contentDescription = "Socials", modifier = Modifier.padding(end = 16.dp))
             Text(text = "Social Media")
+        }
+        Row {
+            Icon(Icons.Rounded.Email, contentDescription = "Email", modifier = Modifier.padding(end = 16.dp))
+            Text(text = "Email")
         }
     }
 }
