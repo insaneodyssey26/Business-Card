@@ -51,14 +51,14 @@ fun BusinessCardApp() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        profile()
+        Profile()
         Spacer(modifier = Modifier.height(50.dp))
-        contacts()
+        Contacts()
     }
 }
 
 @Composable
-fun  profile() {
+fun  Profile() {
     Column (
         modifier = Modifier,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -78,7 +78,7 @@ fun  profile() {
 }
 
 @Composable
-fun contacts() {
+fun Contacts() {
     Column (
         modifier = Modifier
             .padding(bottom = 20.dp),
