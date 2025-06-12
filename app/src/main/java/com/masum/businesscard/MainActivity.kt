@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material.icons.rounded.Share
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -71,8 +72,12 @@ fun contacts() {
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Row {
-            Icon(Icons.Rounded.Phone, contentDescription = "Phone")
+            Icon(Icons.Rounded.Phone, contentDescription = "Phone", modifier = Modifier.padding(end = 16.dp))
             Text(text = "+91 98308 81509")
+        }
+        Row {
+            Icon(Icons.Rounded.Share, contentDescription = "Socials", modifier = Modifier.padding(end = 16.dp))
+            Text(text = "Social Media")
         }
     }
 }
